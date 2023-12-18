@@ -16,8 +16,9 @@ bash dorado_batch.sh
    * Intermediate is "hac"
    * The slowest conversion but highest quality is "sup"
 1. For the **input** (second line in input section) add the path to the parent directory holding all the barcodes of the run.
-1. For the **output** (third line in the input section) add the path of an existing directory that will serve as the parent output directory.
-
+1. For the **output** (third line in the input section) add the path of an existing directory.
+   * A new parent directory will then be created as defined in the "User Input" section. Either "fast_", "hac_", or "sup_" will be added as a prefix to the parent name.
+ 
 Given a parent input directory this script will then look for all barcode directories containing pod5 files, create the same barcode directories to hold the output, and then convert all input pod5 files into fastq files.
 
 `Note: There are many other methods to obtain output, including different file types, which are described in the link above.`
